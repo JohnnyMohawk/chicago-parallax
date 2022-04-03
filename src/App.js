@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
-import img1 from './images/mountain1.png';
+import img1 from './images/building4.png';
 import img2 from './images/mountain2.png';
 import text from './images/text.png';
 
