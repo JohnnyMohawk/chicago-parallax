@@ -1,13 +1,18 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 import './App.css';
 import img1 from './images/building1.png';
 import img2 from './images/building2.png';
 import img3 from './images/building3.png';
 import img4 from './images/building4.png';
+import img5 from './images/clouds.png';
 import text from './images/text.png';
 
 
 function App() {
+
+  useEffect(() => {
+    window.scrollTo(0, 1)
+}, [])
 
   const [offset, setOffset] = useState()
 
@@ -18,6 +23,7 @@ function App() {
   return (
     <div className="App">
       <div className='zoom' style={{backgroundColor: `hsl(${210 - offset}, 70%, 80%)`}}>
+      <img src={img5} alt="" id="img5" />
       <img src={img1} alt="" id="img1"
           style={{top: `-${offset * 0.1 + '%'}`, width: (100 + offset * 0.08) + '%'}}
         />

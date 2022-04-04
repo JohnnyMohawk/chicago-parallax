@@ -24,29 +24,29 @@
   bottom: 0%;
 }
 
-#img1 {
+#img1,
+#img2,
+#img3,
+#img4,
+#img5 {
   position: absolute;
   z-index: 100;
 }
 
-#img2 {
-  position: absolute;
-  z-index: 100;
+#img5 {
+    animation-name: spin;
+    animation-duration: 100000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
 }
 
-#img3 {
-  position: absolute;
-  z-index: 100;
-}
-
-#img4 {
-  position: absolute;
-  z-index: 100;
-}
-
-#img2 {
-  position: absolute;
-  z-index: 100;
+@keyframes spin {
+  from {
+      transform:rotate(0deg);
+  }
+  to {
+      transform:rotate(360deg);
+  }
 }
 
 #text {
