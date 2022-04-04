@@ -15,24 +15,23 @@ function App() {
 
   window.addEventListener('scroll', handleScroll)
 
-
   return (
     <div className="App">
-      <div className='zoom'>
+      <div className='zoom' style={{backgroundColor: `hsl(${210 - offset}, 70%, 80%)`}}>
       <img src={img1} alt="" id="img1"
-          style={{top: `-${offset * 0.26 + '%'}`, width: (100 + offset * 0.08) + '%'}}
+          style={{top: `-${offset * 0.1 + '%'}`, width: (100 + offset * 0.08) + '%'}}
         />
         <img src={img2} alt="" id="img2"
-          style={{right: `-${offset * 0.08 + '%'}`, height: (100 + offset * 0.08) + '%'}}
+          style={{right: `-${offset * 0.16 + '%'}`, height: (100 + offset * 0.08) + '%'}}
         />
         <img src={img3} alt="" id="img3"
-          style={{bottom: `-${offset * 0.26 + '%'}`, width: (100 + offset * 0.08) + '%'}}
+          style={{bottom: `-${offset * 0.15 + '%'}`, width: (100 + offset * -0.08) + '%'}}
         />
         <img src={img4} alt="" id="img4"
           style={{left: `-${offset * 0.3 + '%'}`, height: (100 + offset * 0.3) + '%'}}
         />
         <img src={text} alt="" id="text"
-          style={{top: `-${10 + offset * 0.3 + '%'}`}}
+          style={{top: `-${offset * 0.3 + '%'}`}}
         />
       </div>
 
