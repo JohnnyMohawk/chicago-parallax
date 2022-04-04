@@ -5,8 +5,9 @@
 }
 
 .zoom {
+  margin: 0 auto;
   width: 100vw;
-  height: 1000px;
+  height: 100vh;
   position: relative;
   z-index: 1000;
   overflow: hidden;
@@ -25,13 +26,26 @@
 
 #img1 {
   position: absolute;
-  transform: translateX(0%);
   z-index: 100;
 }
 
 #img2 {
   position: absolute;
-  /* transform: translateX(10%); */
+  z-index: 100;
+}
+
+#img3 {
+  position: absolute;
+  z-index: 100;
+}
+
+#img4 {
+  position: absolute;
+  z-index: 100;
+}
+
+#img2 {
+  position: absolute;
   z-index: 100;
 }
 
@@ -40,3 +54,18 @@
   transform: translateY(65%);
 }
 
+.content {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.content h2 {
+  font-size: 3em;
+}
+
+.content p {
+  font-size: 1.5em;
+  text-align: justify;
+  margin: 30px 0;
+}

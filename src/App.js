@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import './App.css';
-import img1 from './images/building4.png';
-import img2 from './images/mountain2.png';
+import img1 from './images/building1.png';
+import img2 from './images/building2.png';
+import img3 from './images/building3.png';
+import img4 from './images/building4.png';
 import text from './images/text.png';
 
 
@@ -17,12 +19,17 @@ function App() {
   return (
     <div className="App">
       <div className='zoom'>
-        <img src={img1} alt="" id="img1"
-          style={{left: `-${10 + offset * 0.3 + '%'}`, width: (100 + offset * 0.3) + '%'}}
+      <img src={img1} alt="" id="img1"
+          style={{top: `-${offset * 0.26 + '%'}`, width: (100 + offset * 0.08) + '%'}}
         />
-        <img src={img2} alt="" id="img2" 
-          // style={{width: (100 + offset * 0.3) + '%'}}
-          style={{right: `-${10 + offset * 0.3 + '%'}`, width: (100 + offset * 0.3) + '%'}}
+        <img src={img2} alt="" id="img2"
+          style={{right: `-${offset * 0.08 + '%'}`, height: (100 + offset * 0.08) + '%'}}
+        />
+        <img src={img3} alt="" id="img3"
+          style={{bottom: `-${offset * 0.26 + '%'}`, width: (100 + offset * 0.08) + '%'}}
+        />
+        <img src={img4} alt="" id="img4"
+          style={{left: `-${offset * 0.3 + '%'}`, height: (100 + offset * 0.3) + '%'}}
         />
         <img src={text} alt="" id="text"
           style={{top: `-${10 + offset * 0.3 + '%'}`}}
