@@ -9,7 +9,7 @@ import jna from './images/JNA-Design.png'
 import webart from './images/Webart.png'
 import scrollart from './images/Art-of-scroll.png'
 import Lottie from 'react-lottie-player'
-import orbit from './animations/orbit.json'
+import orbit from './animations/orbit1.json'
 import logo from './images/JohnLogoNoBG.png'
 
 
@@ -92,7 +92,7 @@ function App() {
       </div>
         <div className='content2'>
           <img src={logo} alt="" id="logo"
-            style={{top: `-${offset * 0.01 + '%'}`}}
+            style={{top: `-${offset * 0.0235 + '%'}`}}
           />
         </div>
     </div>

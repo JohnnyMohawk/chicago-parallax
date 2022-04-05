@@ -62,8 +62,13 @@
   position: absolute;
   /* transform: translateY(65%);
   max-width: 100vw; */
-  margin-top: 1720px;
+  margin-top: 1870px;
   padding-bottom: 180px;
+}
+
+#logo:hover {
+  -webkit-filter: invert(100%) !important;
+  transition: all 1s ease-in-out;
 }
 
 #text1 {
