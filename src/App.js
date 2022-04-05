@@ -92,7 +92,7 @@ function App() {
       </div>
         <div className='content2'>
           <img src={logo} alt="" id="logo"
-            style={{top: `-${offset * 0.02 + '%'}`}}
+            style={{top: `-${offset * 0.01 + '%'}`}}
           />
         </div>
     </div>
