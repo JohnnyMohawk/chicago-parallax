@@ -10,6 +10,7 @@ import webart from './images/Webart.png'
 import scrollart from './images/Art-of-scroll.png'
 import Lottie from 'react-lottie-player'
 import orbit from './animations/orbit.json'
+import logo from './images/JohnLogoNoBG.png'
 
 
 function App() {
@@ -87,8 +88,13 @@ function App() {
         Amet culpa Lorem reprehenderit elit.</p>
             </div>
           </div>
-        <div className='content2'></div>
+          
       </div>
+        <div className='content2'>
+          <img src={logo} alt="" id="logo"
+            style={{top: `-${offset * 0.02 + '%'}`}}
+          />
+        </div>
     </div>
   );
 }
