@@ -69,6 +69,22 @@
 #logo:hover {
   -webkit-filter: invert(100%) !important;
   transition: all 1s ease-in-out;
+  animation-name: grow;
+  animation-duration: 30000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes grow {
+  0% {
+      transform: scale(1);
+  }
+  50% {
+      transform: scale(13);
+  }
+  100% {
+    transform: scale(1);
+}
 }
 
 #text1 {
